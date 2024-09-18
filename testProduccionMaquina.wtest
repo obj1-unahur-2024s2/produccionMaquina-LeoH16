@@ -1,9 +1,20 @@
 import maquina.*
 
-describe "group of tests ..." {
-
-  test "test 1 ..." {
-    assert.that(true)
+describe "pruebas de máquina" {
+  test "Verificar si se produjeron 49"
+  {
+    assert.that(maquina.algunDiaSeProdujo(49))
   }
 
+
+  registroProduccion.algunDiaSeProdujo(52)	false
+  registroProduccion.maximoValorDeProduccion()	62
+  registroProduccion.valoresDeProduccionPares()	18,62
+  registroProduccion.produccionEsAcotada(10,100)	true
+  registroProduccion.produccionEsAcotada(20,100)	false (porque 18 no está en el rango)
+  registroProduccion.produccionesSuperioresA(35)	43,49,62,39
+  registroProduccion.produccionesSumando(5)	48,23,54,67,38,44
+  registroProduccion.totalProducido()	244
+  registroProduccion.ultimoValorDeProduccion()	39
+  registroProduccion.cantidadProduccionesMayorALaPrimera()	
 }
